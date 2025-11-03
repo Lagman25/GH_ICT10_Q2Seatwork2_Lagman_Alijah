@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Seatwork 2</title>
+</head>
+<body>
+    <h1>Student Grade Calculator</h1>
+    <form>
+        <p>First Name:</p>
+        <input type="text" id="firstname" placeholder="Enter your first name"><br>
+        <p>Last Name:</p>
+        <input type="text" id="lastname" placeholder="Enter your last name"><br>
+    </form>
+    <h3>Enter your Grades:</h3>
+    <form>
+        <p>Science</p>
+        <input type="text" id="science" placeholder="Enter your grade"><br>
+        <p>English</p>
+        <input type="text" id="english" placeholder="Enter your grade"><br>
+        <p>ICT</p>
+        <input type="text" id="ict" placeholder="Enter your grade"><br>
+        <p>Math</p>
+        <input type="text" id="math" placeholder="Enter your grade"><br>
+        <p>Filipino</p>
+        <input type="text" id="filipino" placeholder="Enter your grade"><br>
+        <p>P.E.</p>
+        <input type="text" id="pe" placeholder="Enter your grade"><br>
+        <input type="button" value="Calculate GWA" py-click="final_results">
+    </form> 
+    <div id="name"></div>
+    <div id="grades"></div>
+    <div id="gwa"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
