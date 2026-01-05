@@ -32,3 +32,8 @@ def final_results(e):
     P.E.: {pe}<br>
     '''
     display(f'Your general weighted average is {gwa:.2f}', target='gwa')
+
+    if gwa > 74:
+        display('You have passed!', target='gwa')
+    else:
+        display('You have failed.', target='gwa')
